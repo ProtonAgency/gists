@@ -17,6 +17,10 @@ class Loader {
       document.querySelectorAll('a').forEach(el => {
         el.addEventListener('click', this.hide.bind(this))
       })
+      
+      document.querySelectorAll('form').forEach(el => {
+        el.addEventListener('submit', this.hide.bind(this))
+      })
     })
   }
 
